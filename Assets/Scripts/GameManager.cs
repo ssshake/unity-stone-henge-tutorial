@@ -23,6 +23,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        Gates.ForEach(delegate (GameObject gate)
+        {
+            gate.SetActive(false);
+        });
+        EnableNextGate();
+    }
+
     public void WentThroughGate()
     {
         GatesCompleted++;
@@ -30,29 +39,15 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Game Over");
         }
+        else {
+            EnableNextGate();
+        }
+        
+    }
+
+    void EnableNextGate() {
+        Gates[GatesCompleted].SetActive(true);
     }
 
 
-}
-
-
-public class SingletonDontDestroyOnLoad : MonoBehaviour
-{
-
-    private static SingletonDontDestroyOnLoad _instance;
-    public static SingletonDontDestroyOnLoad Instance { get { return _instance; } }
-
-
-    private void Awake()
-    {
-        if (_instance != null && _instance != this)
-        {
-            Destroy(this.gameObject);
-        }
-        else
-        {
-            _instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
-    }
 }

@@ -6,6 +6,7 @@ public class BallController : MonoBehaviour
 {
     Rigidbody Ball;
     public int Speed = 5;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,10 +14,14 @@ public class BallController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // get input axis y & input axis x
-        Ball.AddForce(Input.GetAxis("Horizontal") * Speed, 0, Input.GetAxis("Vertical") * Speed);
+        Ball.AddForce(
+            Input.GetAxis("Horizontal") * Speed,
+            0,
+            Input.GetAxis("Vertical") * Speed
+        );
 
         if (Input.GetKeyDown(KeyCode.Space)) {
             Debug.Log("Jump");

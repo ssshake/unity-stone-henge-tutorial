@@ -138,6 +138,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goal2
       objectReference: {fileID: 0}
+    - target: {fileID: 8028794967010682545, guid: 8dfcc33c1034346449af94fca28dbbb1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2704777607558003431, guid: 8dfcc33c1034346449af94fca28dbbb1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -322,7 +327,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2.8825914e+32, y: 1.85236e+28, z: 6.742551e+22, w: 4.2981235e+21}
+  m_BoundingSphereOverride: {x: 0, y: 3e-45, z: 0, w: 9e-44}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -538,7 +543,7 @@ GameObject:
   - component: {fileID: 1656811254}
   - component: {fileID: 1656811260}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -670,6 +675,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goal3
       objectReference: {fileID: 0}
+    - target: {fileID: 8028794967010682545, guid: 8dfcc33c1034346449af94fca28dbbb1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2704777607558003431, guid: 8dfcc33c1034346449af94fca28dbbb1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -725,6 +735,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3206522114672565067, guid: 8dfcc33c1034346449af94fca28dbbb1,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dfcc33c1034346449af94fca28dbbb1, type: 3}
 --- !u!1001 &2347058450514963372
@@ -739,6 +754,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goal1
       objectReference: {fileID: 0}
+    - target: {fileID: 8028794967010682545, guid: 8dfcc33c1034346449af94fca28dbbb1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2704777607558003431, guid: 8dfcc33c1034346449af94fca28dbbb1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -752,7 +772,7 @@ PrefabInstance:
     - target: {fileID: 2704777607558003431, guid: 8dfcc33c1034346449af94fca28dbbb1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.75
+      value: 6.4
       objectReference: {fileID: 0}
     - target: {fileID: 2704777607558003431, guid: 8dfcc33c1034346449af94fca28dbbb1,
         type: 3}
